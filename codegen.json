@@ -1,0 +1,15 @@
+{
+  "overwrite": true,
+  "schema": "src/typeDefs/schema.graphql",
+  "generates": {
+    "src/resolvers/resolvers-types.ts": {
+      "config": {
+        "useIndexSignature": true
+      },
+      "plugins": [
+        "typescript",
+        "typescript-resolvers"
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+type Query {
+  user: [Users]
+}
+
+type Users {
+  id: String!
+  name: String!
+  address: String!
+  age: String!
+  education: Education!
+}
+
+type Education {
+  id:String!
+  collegeName: String!
+  courseName: String!
+  level: String!
+}
+
+type Mutation {
+  createUser(input: UsersInput!): String!
+}
+
+input UsersInput {
+  name: String!
+  address: String!
+  age: String!
+  education: EducationInput!
+}
+
+input EducationInput {
+  collegeName: String!
+  courseName: String!
+  level: String!
+}

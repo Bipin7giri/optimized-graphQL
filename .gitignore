@@ -1,0 +1,36 @@
+# Ignore local files
+.DS_Store
+.local*
+.vscode/
+
+# Ignore build artifacts
+build/
+cdk.context.json
+cdk.out/
+*.tabl.json
+cdk-integ.out.*/
+yarn-error.log
+
+# Ignore test coverage reports
+coverage/
+.nyc_output
+.nycrc
+LAST_BUILD
+*.sw[a-z]
+*~
+
+# Ignore IDE-specific files
+.idea/
+*.iml
+
+# Ignore node modules
+node_modules/
+
+# Ignore generated TypeScript files
+.d.ts
+.js
+
+# Ignore temp files
+temp/
+out/
+dist/
